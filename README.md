@@ -33,6 +33,8 @@ P,L,U=lu(A)
 print(L)
 print(U)
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22fb3af6-a9a0-476c-a5f3-2b3130e9b5c3" />
+
 
 (ii) To find the LU Decomposition of a matrix
 
