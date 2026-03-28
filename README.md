@@ -19,52 +19,41 @@ Here are **5 clear algorithm steps** for your LU Decomposition experiment:
 5. **Display the results** (matrices ( L ), ( U ), and solution ( X )) and stop the program.
 
 ## Program:
-(i) To find the L and U matrix
 ```
 Program to solve a matrix using LU decomposition.
 Developed by: Madeshwaran D
 RegisterNumber: 212225040212
 '''
 
-# Define the matrix A and the vector B from the example
-A = np.array([[3, 2, 7], [2, 3, 1], [3, 4, 1]])
-B = np.array([4, 5, 7])
+(i) To find the L and U matrix
 
-# Perform LU decomposition and solve
-# lu_factor returns the pivot indices and the LU matrix in a single structure
-lu, piv = lu_factor(A)
-x = lu_solve((lu, piv), B)
-
-# Print the result
-print(x)
-```
-(ii) To find the LU Decomposition of a matrix
-```
 import numpy as np
 from scipy.linalg import lu
+A=np.array(eval(input()))
+P,L,U=lu(A)
+print(L)
+print(U)
 
-'''
-Program to find L and U matrix using LU decomposition.
-Developed by: madeshwaran D
+
+(ii) To find the LU Decomposition of a matrix
+/*
+Program to find the LU Decomposition of a matrix.
+Developed by: Madeshwaran D
 RegisterNumber: 212225040212
-'''
-
-# Define the input matrix A
-a = np.array([[3, 2, 7], [2, 3, 1], [3, 4, 1]])
-
-# Perform LU decomposition
-# P is the permutation matrix, L is lower triangular, U is upper triangular
-p, l, u = lu(a)
-
-# Print the results
-print(l)
-print(u)
-```
+*/
+# To print X matrix (solution to the equations)
+import numpy as np
+from scipy.linalg import lu_factor,lu_solve
+A=np.array(eval(input()))
+B=np.array(eval(input()))
+lu,pivot=lu_factor(A)
+x=lu_solve((lu,pivot),B)
+print(x)
+<img width="1207" height="778" alt="image" src="https://github.com/user-attachments/assets/8352557d-e9da-4ee7-a5f0-6850044d2b46" />
 
 ## Output:
-<img width="1546" height="548" alt="Screenshot 2026-03-27 192942" src="https://github.com/user-attachments/assets/db0537aa-1b4a-4689-a1aa-527ce83b7100" />
-<img width="1553" height="636" alt="Screenshot 2026-03-27 193147" src="https://github.com/user-attachments/assets/1f7e3e1c-f306-4aba-8199-d87ae1bab7af" />
-
+<img width="1211" height="508" alt="image" src="https://github.com/user-attachments/assets/3e94e6fb-6c1f-42ac-b512-aa423d2d23ef" />
+<img width="1211" height="271" alt="image" src="https://github.com/user-attachments/assets/a1e7e892-a252-48e4-b988-5ce40f790e3b" />
 
 
 
