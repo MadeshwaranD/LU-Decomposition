@@ -26,12 +26,14 @@ RegisterNumber: 212225040212
 
 (i) To find the L and U matrix
 ...
+/*
 import numpy as np
 from scipy.linalg import lu
 A=np.array(eval(input()))
 P,L,U=lu(A)
 print(L)
 print(U)
+/*
 ...
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22fb3af6-a9a0-476c-a5f3-2b3130e9b5c3" />
@@ -43,6 +45,7 @@ Program to find the LU Decomposition of a matrix.
 Developed by: Madeshwaran D
 RegisterNumber: 212225040212
 ...
+/*
 # To print X matrix (solution to the equations)
 import numpy as np
 from scipy.linalg import lu_factor,lu_solve
@@ -51,6 +54,7 @@ B=np.array(eval(input()))
 lu,pivot=lu_factor(A)
 x=lu_solve((lu,pivot),B)
 print(x)
+/*
 ...
 <img width="1207" height="778" alt="image" src="https://github.com/user-attachments/assets/ea5244d6-507e-43bc-842d-4cc138afb0bb" />
 
