@@ -19,11 +19,10 @@ Here are **5 clear algorithm steps** for your LU Decomposition experiment:
 5. **Display the results** (matrices ( L ), ( U ), and solution ( X )) and stop the program.
 
 ## Program:
-```
+
 Program to solve a matrix using LU decomposition.
 Developed by: Madeshwaran D
 RegisterNumber: 212225040212
-'''
 
 (i) To find the L and U matrix
 
@@ -36,11 +35,11 @@ print(U)
 
 
 (ii) To find the LU Decomposition of a matrix
-/*
+
 Program to find the LU Decomposition of a matrix.
 Developed by: Madeshwaran D
 RegisterNumber: 212225040212
-*/
+
 # To print X matrix (solution to the equations)
 import numpy as np
 from scipy.linalg import lu_factor,lu_solve
