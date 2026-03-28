@@ -49,11 +49,15 @@ B=np.array(eval(input()))
 lu,pivot=lu_factor(A)
 x=lu_solve((lu,pivot),B)
 print(x)
-<img width="1207" height="778" alt="image" src="https://github.com/user-attachments/assets/8352557d-e9da-4ee7-a5f0-6850044d2b46" />
+
+<img width="1207" height="778" alt="image" src="https://github.com/user-attachments/assets/ea5244d6-507e-43bc-842d-4cc138afb0bb" />
 
 ## Output:
-<img width="1211" height="508" alt="image" src="https://github.com/user-attachments/assets/3e94e6fb-6c1f-42ac-b512-aa423d2d23ef" />
-<img width="1211" height="271" alt="image" src="https://github.com/user-attachments/assets/a1e7e892-a252-48e4-b988-5ce40f790e3b" />
+
+<img width="1211" height="508" alt="image" src="https://github.com/user-attachments/assets/f888acc4-12ca-41b4-9668-3c059e93ad7b" />
+
+<img width="1211" height="271" alt="image" src="https://github.com/user-attachments/assets/2fb184e7-fbc4-4184-90b5-3424e0ed9fa9" />
+
 
 
 
